@@ -44,7 +44,6 @@ Bundle 'godlygeek/tabular.git'
 Bundle 'ervandew/supertab.git'
 Bundle 'scrooloose/syntastic.git'
 Bundle 'garbas/vim-snipmate.git'
-Bundle 'frace/vim-bubbles.git'
 Bundle 'itchyny/lightline.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'kien/ctrlp.vim'
@@ -52,12 +51,6 @@ Bundle 'benmills/vimux'
 Bundle 'skalnik/vim-vroom'
 
 filetype plugin indent on
-
-" Choose an arbitrary leader key - default <C>.
-let g:bubbles_leader = '<C>'
-
-" Choose a set of keys: 'hjkl' || 'arrows' - default 'hjkl'.
-let g:bubbles_keyset = 'hjkl'
 
 " Source initialization files
 runtime! init/**.vim
