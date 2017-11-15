@@ -24,7 +24,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'joshdick/onedark.vim'
 Bundle 'nelstrom/vim-qargs.git'
 Bundle 'tpope/vim-fugitive.git'
 Bundle 'tpope/vim-cucumber.git'
@@ -43,15 +43,21 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'godlygeek/tabular.git'
 Bundle 'ervandew/supertab.git'
 Bundle 'scrooloose/syntastic.git'
-Bundle 'msanders/snipmate.vim.git'
-Bundle 'kchmck/vim-coffee-script.git'
-Bundle 'Lokaltog/vim-powerline.git'
+Bundle 'garbas/vim-snipmate.git'
+Bundle 'frace/vim-bubbles.git'
+Bundle 'itchyny/lightline.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'kien/ctrlp.vim'
 Bundle 'benmills/vimux'
 Bundle 'skalnik/vim-vroom'
 
 filetype plugin indent on
+
+" Choose an arbitrary leader key - default <C>.
+let g:bubbles_leader = '<C>'
+
+" Choose a set of keys: 'hjkl' || 'arrows' - default 'hjkl'.
+let g:bubbles_keyset = 'hjkl'
 
 " Source initialization files
 runtime! init/**.vim

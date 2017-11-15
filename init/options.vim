@@ -1,5 +1,9 @@
 " GUI Options
-  set guifont=Inconsolata:h24
+  if has("gui_running")
+    set macligatures
+  endif
+
+  set guifont=Fira\ Code:h15
   set guioptions-=T               " Remove GUI toolbar
   set guioptions-=e               " Use text tab bar, not GUI
   set guioptions-=rL              " Remove scrollbars
