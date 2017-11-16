@@ -25,6 +25,7 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'nelstrom/vim-qargs.git'
 Plugin 'tpope/vim-fugitive.git'

@@ -106,6 +106,16 @@
   set cursorline                       " Highlight current line
   set laststatus=2                     " Always show statusline
 
+  if exists('+colorcolumn')
+    hi ColorColumn guibg=#4b5263
+    set colorcolumn=128
+  else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>128v.\+', -1)
+  endif
+
+  highlight OverLength ctermbg=red ctermfg=white guibg=#be5046
+  match OverLength /\%129v.\+/
+
 " Write all writeable buffers when changing buffers or losing focus.
   set autowriteall                " Save when doing various buffer-switching things.
   autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
@@ -125,3 +135,4 @@
 " Set filetypes for unusual files
   au BufNewFile,BufRead *.ejs set filetype=html
   au BufNewFile,BufRead {Capfile,Gemfile,Rakefile,config.ru,.irbrc} set ft=ruby
+
