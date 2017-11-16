@@ -50,6 +50,7 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'kien/ctrlp.vim'
 Plugin 'benmills/vimux'
 Plugin 'skalnik/vim-vroom'
+Plugin 'rizzatti/dash.vim'
 
 filetype plugin indent on
 
