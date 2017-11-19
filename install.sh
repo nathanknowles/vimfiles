@@ -10,8 +10,10 @@ else
   cd -
 
   echo === Linking vim directories
-  ln -s $PWD/vimrc $HOME/.vimrc
   ln -s $PWD $HOME/.vim
+  ln -s $PWD $HOME/.config/nvim
+  ln -s $PWD/vimrc $HOME/.vimrc
+  ln -s $PWD/vimrc $HOME/.config/nvim/init.vim
 
   echo === Vundling
   vim +PluginInstall +qall

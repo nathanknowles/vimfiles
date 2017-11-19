@@ -3,7 +3,7 @@
     set macligatures
   endif
 
-  set guifont=Fira\ Code:h15
+  set guifont=Fira\ Code:h12
   set guioptions-=T               " Remove GUI toolbar
   set guioptions-=e               " Use text tab bar, not GUI
   set guioptions-=rL              " Remove scrollbars

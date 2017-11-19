@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [[ -e $HOME/.vimrc || -e $HOME/.vim ]]; then
+if [[ -e $HOME/.vimrc || -e $HOME/.vim || -e $HOME/.config/nvim ]]; then
 
   # asking for confirmation
-  echo "I'll delete $HOME/.vim and $HOME/.vimrc\n\
+  echo "I'll delete $HOME/.vim and $HOME/.vimrc and $HOM/.config/nvim \n\
 Hope you don't have anything important there.\n\n\
 Sounds good? (yes/no)"
 
@@ -22,6 +22,7 @@ Sounds good? (yes/no)"
 
   # deleting
   echo "You entered $CONFIRM. So I'm deleting it."
+  rm ~/.config/nvim
   rm ~/.vim
   rm ~/.vimrc
 else

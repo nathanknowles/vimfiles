@@ -24,8 +24,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Plugin 'gmarik/vundle'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'mtscout6/syntastic-local-eslint.vim'
+Plugin 'w0rp/ale'
 Plugin 'joshdick/onedark.vim'
 Plugin 'nelstrom/vim-qargs.git'
 Plugin 'tpope/vim-fugitive.git'
@@ -49,7 +48,6 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'kien/ctrlp.vim'
 Plugin 'benmills/vimux'
-Plugin 'skalnik/vim-vroom'
 Plugin 'rizzatti/dash.vim'
 
 filetype plugin indent on
